@@ -1,32 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+// BASE
 
-li {
-    list-style-type: none;
-}
+@use "./partials/base/reset";
+@use "./partials/base/tipografia";
 
-a {
-    text-decoration: none;
-    color: #000000;
-}
+// COMPONENTS
 
-body {
-    margin: 0 32px;
-}
+@use "./partials/components/header";
+@use "./partials/components/general";
+@use "./partials/components/footer";
 
-/* Header */
-header {
-    padding-top: 32px;
-}
-
-nav {
-    display: grid;
-    grid-template-areas: 
-        "navbar";
-}
-
-.navbar {
-    grid-area: navbar;
-}
+//UTILITIES

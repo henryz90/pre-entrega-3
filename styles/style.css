@@ -1,1 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  padding-top: 32px;
+}
+
+.hero {
+  width: 100%;
+  position: relative;
+  min-height: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+.hero .div-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  margin: 20px;
+  z-index: 1;
+}
+.hero img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
