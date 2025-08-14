@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!--CSS-->
@@ -11,47 +13,64 @@
 </head>
 <body>
     <header>
-        <figure class="logo">
-            <img src="https://placehold.co/150x50" alt=""/>
-        </figure>
-        <nav>
-            <ul class="navbar">
-                <li class="nav-li">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-li">
-                    <a class="nav-link" href="#">Nosotros</a>
-                </li>
-                <li class="nav-li">
-                    <a class="nav-link" href="servicios.html">Servicios</a>
-                </li>
-                <li class="nav-li">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-                <li class="nav-li">
-                    <a class="nav-link" href="turnos.html">Turnos</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../assets/logofisiobet.png" alt="FisioBet logo"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link" href="turnos.html">Turnos</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <img src="https://placehold.co/520x330" alt=""/>
-        <h1>Quienes Somos?</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta quos mollitia ex fuga cum consequuntur eum expedita veniam nihil id, dolores, nobis aperiam sit ea inventore consequatur. Expedita, amet odio?</p>
+        <section class="somos">
+            <div class="somos-container"> 
+                <div class="somos-content">
+                    <div class="somos-text">
+                        <h2 class="somos-title">¿Quienes Somos?</h2>
+                        <p class="text-content">En FisioBet ayudamos a las personas a moverse mejor y vivir sin dolor. Somos un equipo de fisioterapeutas y kinesiólogos que trabaja con un enfoque personalizado y basado en evidencia científica, para que vuelvas a tus actividades con seguridad y confianza.</p>
+                        <p class="text-content">Trabajamos comenzando con una evaluación integral de tu historia clínica y tus objetivos. Con esos datos diseñamos un plan a medida que combina terapia manual, ejercicio terapéutico y estrategias de educación en movimiento. Medimos el progreso con objetivos claros y ajustamos el tratamiento en cada sesión.</p>
+                        <p class="text-content">Nuestro diferencial se basa en la atención uno a uno, escuchando lo que necesitás. Protocolos actualizados y prácticos para tu día a día. Te ofrecemos un plan de ejercicios claro para que avances también fuera del consultorio con una comunicación constante y metas medibles para que veas resultados.</p>
+                    </div>
+                    <figure class="somos-media">
+                        <img src="../assets/somos.jpg" alt="equipo fisiobet"/>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        
     </main>
-    <footer>
-        <ul>
+    <footer class="site-footer">
+        <ul class="footer-social">
             <li>
-                <a href="https://instagram.com">IG</a>
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
             </li>
             <li>
-                <a href="https://facebook.com">FB</a>
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
             </li>
             <li>
-                <a href="https://linkedin.com">LD</a>
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
             </li>
         </ul>
-        <p>Copyright © 2024 FisioBet. Todos los derechos reservados.</p>
+        <p class="footer-copy">Copyright © 2025 FisioBet. Todos los derechos reservados.</p>
     </footer>
+
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+.navbar {
+    .navbar-collapse {     
+        justify-content: space-evenly;
+        padding-right: 10rem;
+    }
+
+    .navbar-brand img{
+        display: block;
+        height: 90px;
+        width: auto;
+    }
+    .nav-link {
+        color: #c75efb;
+        font-size: 1.2rem;
+        font-weight: 400;
+
+        &:hover,
+        &.active,
+        &[aria-current="page"] {
+            color: #aa13f5;
+            font-weight: 500;
+         }
+    }
+}

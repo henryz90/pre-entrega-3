@@ -3,35 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!--BOOTSTRAP-->
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="../styles/style.css">
     <title>FisioBet Turnos</title>
 </head>
 <body>
     <header>
-        <figure class="logo">
-            <img src="https://placehold.co/150x50" alt=""/>
-        </figure>
-        <nav>
-            <ul class="navbar">
-                <li class="nav-li">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-li">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-li">
-                    <a class="nav-link" href="servicios.html">Servicios</a>
-                </li>
-                <li class="nav-li">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-                <li class="nav-li">
-                    <a class="nav-link" href="#">Turnos</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../assets/logofisiobet.png" alt="FisioBet logo"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link active" aria-current="page" href="#">Turnos</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -44,19 +41,25 @@
         <p>Servicio</p>
         <a href="">Agendar</a>
     </main>
-    <footer>
-        <ul>
+    <footer class="site-footer">
+        <ul class="footer-social">
             <li>
-                <a href="https://instagram.com">IG</a>
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
             </li>
             <li>
-                <a href="https://facebook.com">FB</a>
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
             </li>
             <li>
-                <a href="https://linkedin.com">LD</a>
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
             </li>
         </ul>
-        <p>Copyright © 2024 FisioBet. Todos los derechos reservados.</p>
+        <p class="footer-copy">Copyright © 2025 FisioBet. Todos los derechos reservados.</p>
     </footer>
 
     <!--BOOTSTRAP JS-->
