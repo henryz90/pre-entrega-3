@@ -149,10 +149,6 @@ header {
   gap: 1rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.services .service:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
-}
 .services .service .service-title {
   margin: 0;
   font-size: 1.3rem;
@@ -170,6 +166,136 @@ header {
   aspect-ratio: 4/3;
   object-fit: cover;
   border-radius: 10px;
+}
+
+/*CONTACTO*/
+.contact {
+  min-height: 75svh;
+  padding: 3rem 1rem;
+}
+.contact .contact-container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.contact .contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  align-items: start;
+  gap: 2rem;
+}
+.contact .contact-title {
+  font-size: clamp(1.6rem, 2.2vw, 2rem);
+  font-weight: 800;
+  margin: 0 0 1rem 0;
+}
+.contact .contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact .contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+.contact .contact-item {
+  margin: 0;
+}
+.contact .contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: #212529;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.contact .contact-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+.contact .contact-icon {
+  font-size: 1.25rem;
+  width: 1.5rem;
+  text-align: center;
+}
+.contact .fa-whatsapp {
+  color: #25D366;
+}
+.contact .fa-instagram {
+  color: #C13584;
+}
+.contact .fa-envelope {
+  color: #0f5132;
+}
+.contact .contact-map {
+  margin: 0;
+}
+.contact .contact-map img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+/*TURNOS*/
+.appointment {
+  padding: 3rem 1rem;
+}
+.appointment .appointment-container {
+  max-width: 900px;
+  margin-inline: auto;
+}
+.appointment .appointment-title {
+  font-size: clamp(1.6rem, 2.2vw, 2rem);
+  font-weight: 800;
+  margin: 0 0 1.5rem 0;
+  text-align: left;
+}
+.appointment .appointment-form {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+}
+.appointment .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.25rem;
+}
+.appointment .form-field--full {
+  grid-column: 1/-1;
+}
+.appointment .form-label {
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+.appointment .form-control, .appointment .form-select {
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+}
+.appointment .form-actions {
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.appointment .form-actions .btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: transform 0.15s ease;
+}
+.appointment .form-actions .btn:hover {
+  transform: translateY(-1px);
 }
 
 .site-footer {
@@ -220,5 +346,203 @@ header {
   color: #aa13f5;
   font-weight: 500;
 }
+.navbar .navbar-toggler {
+  border: 0;
+}
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../scss/partials/base/_tipografia.scss%22,%22../scss/partials/base/_reset.scss%22,%22../scss/partials/components/_header.scss%22,%22../scss/partials/components/_general.scss%22,%22../scss/partials/components/_footer.scss%22,%22../scss/partials/components/_navbar.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAQ;ACAR;EACI;EACA;;;AAGJ;EACI;;;AAGJ;EACI;EACA;;;ADTJ;EACI;;;AEHJ;EACI;;;ACDJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGA;EACI;EACA;EACA;;AAGJ;EACI;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;;;AAKZ;AAEA;EACI;;AAEA;EACI;EACA;;AAGJ;EACI;EACA;EACA;;AAGJ;EACI;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;;;AAIR;EACI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;;;AAIR;AAEA;EACE;;AAEA;EACE;EACA;;AAIF;EACE;EACA;EACA;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;;AAGF;EACE;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;;;ACzKN;EACI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;;AAGI;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;;AAOhB;EACI;EACA;EACA;;;AChCJ;EACI;EACA;;AAGJ;EACI;EACA;EACA;;AAEJ;EACI;EACA;EACA;;AAEA;EAGI;EACA%22,%22file%22:%22style.css%22%7D */
+/*RESPONSIVE*/
+/*574px*/
+@media (min-width: 574px) {
+  /*HERO*/
+  .hero .div-hero {
+    max-width: 75%;
+  }
+  .hero .main-title {
+    font-size: clamp(2rem, 3.4vw, 2.6rem);
+  }
+  .hero .subtitle {
+    font-size: clamp(1.05rem, 2vw, 1.2rem);
+  }
+  /*SOMOS*/
+  .somos .somos-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 1.25rem;
+  }
+  .somos .somos-text {
+    order: 1;
+    width: 100%;
+  }
+  .somos-media {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .somos-media img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+}
+/*CONTACTO*/
+.contact .contact-grid {
+  grid-template-columns: 1fr;
+  grid-template-areas: "card" "map";
+  gap: 1.25rem;
+}
+.contact .contact-card {
+  grid-area: card;
+}
+.contact .contact-map {
+  grid-area: map;
+  margin: 0;
+}
+.contact .contact-map img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
+
+/*768px*/
+@media (min-width: 768px) {
+  /*HERO*/
+  .hero {
+    min-height: 80svh;
+    justify-content: flex-end;
+  }
+  .hero .div-hero {
+    max-width: 60%;
+  }
+  .hero .main-title {
+    font-size: clamp(2.2rem, 3vw, 3rem);
+  }
+  .hero .subtitle {
+    font-size: 1.25rem;
+  }
+  /* SOMOS */
+  .somos .somos-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 1.25rem;
+  }
+  .somos .somos-text {
+    order: 1;
+    width: 100%;
+  }
+  .somos-media {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .somos-media img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+  /* SERVICIOS */
+  .services .services-title {
+    font-size: 2.2rem;
+  }
+  .services .service {
+    padding: 1.125rem;
+    gap: 1rem;
+  }
+  .services .service .service-title {
+    font-size: 1.3rem;
+  }
+  /* CONTACTO */
+  .contact .contact-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "card" "map";
+    gap: 1.25rem;
+  }
+  .contact .contact-card {
+    grid-area: card;
+  }
+  .contact .contact-map {
+    grid-area: map;
+    margin: 0;
+  }
+  .contact .contact-map img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 14px;
+  }
+  /* TURNOS */
+  .appointment .form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+/* >= 992px */
+@media (min-width: 992px) {
+  /* HERO */
+  .hero {
+    min-height: 800px;
+  }
+  .hero .div-hero {
+    max-width: 42%;
+  }
+  .hero .main-title {
+    font-size: 3rem;
+  }
+  .hero .subtitle {
+    font-size: 1.25rem;
+  }
+  /* SOMOS */
+  .somos .somos-text {
+    flex: 1 1 40%;
+  }
+  .somos-media {
+    flex: 1 1 60%;
+  }
+  /* SERVICIOS */
+  .services .services-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+  .services .services-title {
+    font-size: 2.3rem;
+  }
+  /* CONTACTO */
+  .contact .contact-title {
+    font-size: 2rem;
+  }
+  /* TURNOS */
+  .appointment .appointment-form {
+    padding: 1.75rem;
+  }
+}
+/*FOOTER*/
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 1.5rem 1rem;
+  }
+  .site-footer .footer-social {
+    gap: 1rem;
+  }
+  .site-footer .footer-copy {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 480px) {
+  .site-footer .footer-social {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../scss/partials/base/_tipografia.scss%22,%22../scss/partials/base/_reset.scss%22,%22../scss/partials/components/_header.scss%22,%22../scss/partials/components/_general.scss%22,%22../scss/partials/components/_footer.scss%22,%22../scss/partials/components/_navbar.scss%22,%22../scss/partials/utilities/_queries.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAQ;ACAR;EACI;EACA;;;AAGJ;EACI;;;AAGJ;EACI;EACA;;;ADTJ;EACI;;;AEHJ;EACI;;;ACDJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGA;EACI;EACA;EACA;;AAGJ;EACI;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;;;AAKZ;AAEA;EACI;;AAEA;EACI;EACA;;AAGJ;EACI;EACA;EACA;;AAGJ;EACI;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;;;AAIR;EACI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;;;AAIR;AAEA;EACI;;AAEA;EACI;EACA;;AAIJ;EACI;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;;;AAKZ;AAEA;EACI;EACA;;AAEA;EACI;EACA;;AAGJ;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;;AAGJ;EACI;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;;AAGJ;EACI;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAIR;EACI;EACA;EACA;;AAGJ;EAAiB;;AACjB;EAAiB;;AACjB;EAAiB;;AAEjB;EACI;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;;;AAKZ;AAEA;EACI;;AAEA;EACI;EACA;;AAGJ;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;;AAGJ;EACI;;AAGJ;EACI;EACA;;AAGJ;EACI;EACA;;AAGJ;EACI;EACA;EACA;;AAEA;EACA;EACA;EACA;EACA;;AAEA;EAAU;;;ACtTlB;EACI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;;AAGI;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;;AAOhB;EACI;EACA;EACA;;;AChCJ;EACI;EACA;;AAGJ;EACI;EACA;EACA;;AAEJ;EACI;EACA;EACA;;AAEA;EAGI;EACA;;AAIR;EACI;;;ACzBR;AAEA;AACA;AACE;EAEE;IAAY;;EACZ;IAAc;;EACd;IAAc;;AAGhB;EAEE;IACI;IACF;IACA;IACA;IACA;;EAEF;IACI;IACA;;EAGN;IACE;IACA;IACA;IACA;IACA;;EAGF;IACE;IACA;IACA;IACA;IACA;;;AAKJ;AAGI;EACE;EACA,qBACE;EAEF;;AAGF;EAAgB;;AAChB;EAAgB;EAAgB;;AAEhC;EACE;EACA;EACA;EACA;;;AAIN;AACA;AACE;EACA;IACE;IACA;;EACA;IAAY;;EACZ;IAAc;;EACd;IAAc;;AAGhB;EAEE;IACI;IACF;IACA;IACA;IACA;;EAEF;IACI;IACA;;EAGN;IACE;IACA;IACA;IACA;IACA;;EAGF;IACE;IACA;IACA;IACA;IACA;;AAGF;EAEE;IAAkB;;EAClB;IACE;IACA;;EAEA;IAAiB;;AAIrB;EAEE;IACE;IACA,qBACE;IAEF;;EAGF;IAAgB;;EAChB;IAAgB;IAAgB;;EAEhC;IACE;IACA;IACA;IACA;;AAIJ;EAEE;IAAa;;;AAIjB;AACA;AACE;EACA;IACE;;EACA;IAAc;;EACd;IAAc;;EACd;IAAc;;AAGhB;EAEE;IAAc;;EAEhB;IAAe;;AAEf;EAEE;IACE;IACA;;EAEF;IAAkB;;AAGpB;EAEE;IAAiB;;AAGnB;EAEE;IAAoB;;;AAKxB;AAEA;EACI;IACI;;EAEA;IACA;;EAGA;IACA;;;AAKR;EAEY;IACA;IACA%22,%22file%22:%22style.css%22%7D */

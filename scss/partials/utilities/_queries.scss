@@ -1,0 +1,205 @@
+/*RESPONSIVE*/
+
+/*574px*/
+@media (min-width: 574px) {
+  /*HERO*/
+  .hero {
+    .div-hero { max-width: 75%; }
+    .main-title { font-size: clamp(2rem, 3.4vw, 2.6rem); }
+    .subtitle   { font-size: clamp(1.05rem, 2vw, 1.2rem); }
+  }
+
+  /*SOMOS*/
+    .somos {
+    .somos-content {
+        display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+      gap: 1.25rem;
+    }
+    .somos-text  { 
+        order: 1;
+        width: 100%;
+    }
+  }
+  .somos-media {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0; 
+  }
+
+  .somos-media img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+
+}
+
+/*CONTACTO*/
+
+  .contact {
+    .contact-grid {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "card"
+        "map";
+      gap: 1.25rem;
+    }
+
+    .contact-card { grid-area: card; }
+    .contact-map  { grid-area: map; margin: 0; }
+
+    .contact-map img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 14px;
+    }
+  }
+
+/*768px*/
+@media (min-width: 768px) {
+  /*HERO*/
+  .hero {
+    min-height: 80svh;
+    justify-content: flex-end;
+    .div-hero { max-width: 60%; }
+    .main-title { font-size: clamp(2.2rem, 3vw, 3rem); }
+    .subtitle   { font-size: 1.25rem; }
+  }
+
+  /* SOMOS */
+  .somos {
+    .somos-content {
+        display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+      gap: 1.25rem;
+    }
+    .somos-text  { 
+        order: 1;
+        width: 100%;
+    }
+  }
+  .somos-media {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0; 
+  }
+
+  .somos-media img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+
+  /* SERVICIOS */
+  .services {
+    .services-title { font-size: 2.2rem; }
+    .service {
+      padding: 1.125rem;
+      gap: 1rem;
+
+      .service-title { font-size: 1.3rem; }
+    }
+  }
+
+  /* CONTACTO */
+  .contact {
+    .contact-grid {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "card"
+        "map";
+      gap: 1.25rem;
+    }
+
+    .contact-card { grid-area: card; }
+    .contact-map  { grid-area: map; margin: 0; }
+
+    .contact-map img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 14px;
+    }
+  }
+
+  /* TURNOS */
+  .appointment {
+    .form-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+}
+
+/* >= 992px */
+@media (min-width: 992px) {
+  /* HERO */
+  .hero {
+    min-height: 800px;
+    .div-hero   { max-width: 42%; }
+    .main-title { font-size: 3rem; }
+    .subtitle   { font-size: 1.25rem; }
+  }
+
+  /* SOMOS */
+  .somos {
+    .somos-text { flex: 1 1 40%; }
+  }
+  .somos-media { flex: 1 1 60%; }
+
+  /* SERVICIOS */
+  .services {
+    .services-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+    .services-title { font-size: 2.3rem; }
+  }
+
+  /* CONTACTO */
+  .contact {
+    .contact-title { font-size: 2rem; }
+  }
+
+  /* TURNOS */
+  .appointment {
+    .appointment-form { padding: 1.75rem; }
+  }
+}
+
+  
+/*FOOTER*/
+
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 1.5rem 1rem;
+
+        .footer-social {
+        gap: 1rem;
+        }
+
+        .footer-copy {
+        font-size: 0.85rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+        .site-footer {
+            .footer-social {
+            flex-direction: column;
+            gap: 0.5rem;
+            }
+        }
+}
